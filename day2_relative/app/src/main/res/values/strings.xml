@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My_Phone</string>
+    <string name="phone_name">Samsung Galaxy S22 5G</string>
+    <string name="phone_price">$187.63</string>
+    <string name="phone_desc">Version: SM-S901B, SM-S901B/DS (international); SM-S901U (USA); SM-S901U1 (USA unlocked); SM-S901W (Canada); SM-S901N (Korea); SM-S9010 (China); SM-S901E (Asia/Afrika)</string>
+    <string name="memory">256GB | 8GB</string>
+    <string name="camera">50 MP, f/1.8, 23mm (wide)</string>
+    <string name="bookmark">Bookmark</string>
+</resources>
