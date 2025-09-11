@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Profil Diri</string>
+    <string name="self_name">Tegar Raditya Hikmawan</string>
+    <string name="self_nim">24/535872/SV/24321</string>
+    <string name="self_daerah">Asal Daerah: Madiun</string>
+    <string name="self_prodi">Program Studi: Teknologi Rekayasa Perangkat Lunak</string>
+    <string name="self_link">http://github.com/Too-ETGY</string>
+    <string name="self_hobi">Hobi: Playing games, watching movies, sleep.</string>
+    <string name="self_quote">"With great power comes the absolute certainty that you’ll turn into a right c**t."</string>
+    <string name="quote_person">Billy Butcher</string>
+    <string name="self_yaps">
+        From my perspective, Tegar is this student from Madiun who bounces between PHP projects, Android layouts, and even Snake games with exploding apples 🐍💥 like it’s just another Tuesday. He put “Ehm” as his hobby, which honestly made me laugh out loud. My impression? He’s got this fun, slightly chaotic energy, and me, ChatGPT, can’t help but find that both impressive and entertaining.
+    </string>
+    <string name="garis_batas">---------------------------------------------------------------------------------------------</string>
+    <string name="app_footer">Copyright © 2025 SpiderPrey.gg</string>
+</resources>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">News App</string>
+    <string name="news_title">How ‘The Fantastic Four: First Steps’ Pays Tribute to Jack Kirby</string>
+    <string name="news_content">
+        The new Marvel Studios film is directly inspired by Jack “King” Kirby, the legendary artist and creator responsible for some of the most iconic characters in the world.\n
+        Kirby’s signature art style first brought Reed Richards, Sue Storm, Johnny Storm, and Benjamin Grimm to life in the pages of Marvel Comics, and director Matt Shakman wanted The Fantastic Four: First Steps to be a “love letter” to his legacy.\n
+        Early in the Fantastic Four development process, Shakman and production designer Kasra Farahani decided on a style they called “When Kirby Meets Kubrick,” melding Kirby’s signature art with the sci-fi storytelling of Stanley Kubrick’s 1968 classic 2001: A Space Odyssey.\n
+        The result is a trippy, retro-futuristic world that looks like it sprang straight from the pages of Kirby’s comics — from the gorgeous architecture of the Baxter Building to the sleek lines of the Fantasticar.\n
+        Feige notes that Kirby has influenced every Marvel Studios film to date, calling him “one of the greatest storytellers and artists of the 20th century.”\n
+        Kirby also famously grew up on New York’s Lower East Side, and his upbringing helped inspire some of the comics’ most iconic locations, like Yancy Street.\n
+        One of Shakman’s favorite shots in the film recreates Kirby’s cover for FANTASTIC FOUR (1961) #1, the first-ever appearance of Marvel’s First Family.\n
+        The end-credits also conclude with a quote from Kirby himself: “If you look at my characters, you will find me. No matter what kind of character you create or assume, a little of yourself must remain there.”
+    </string>
+</resources>

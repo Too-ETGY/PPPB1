@@ -6,8 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp"
-    tools:context=".MainActivity"
-    android:background="@color/cardview_shadow_end_color">
+    tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/txt_title"
