@@ -6,28 +6,28 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.d3_intentapp.databinding.ActivityMainBinding
+import androidx.navigation.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.example.d4_myshop.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+//    bikin variable binding
     private lateinit var binding: ActivityMainBinding;
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
+//        assign value binding
         binding = ActivityMainBinding.inflate(layoutInflater)
 
         setContentView(binding.root)
 
+//        interaksi dengan binding
         with(binding){
-            var name = "Tegar"
-            mainText.text = "Hello, ${name}"
-            btnDetail.setOnClickListener {
-                val intentToSecondActivity = Intent(this@MainActivity, SecondActivity::class.java)
-                intentToSecondActivity.putExtra("name", name)
-                intentToSecondActivity.putExtra("data", "Mahasiswa TRPL 2024")
-                startActivity(intentToSecondActivity)
-            }
+            val navController = findNavController(R.id.nav_host_fragment)
+
+            bottomNavigationView.setupWithNavController(navController   )
         }
     }
 }
