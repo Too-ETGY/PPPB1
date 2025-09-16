@@ -26,8 +26,7 @@ class MainActivity : AppCompatActivity() {
 //        interaksi dengan binding
         with(binding){
             val navController = findNavController(R.id.nav_host_fragment)
-
-            bottomNavigationView.setupWithNavController(navController   )
+            bottomNavigationView.setupWithNavController(navController)
         }
     }
 }

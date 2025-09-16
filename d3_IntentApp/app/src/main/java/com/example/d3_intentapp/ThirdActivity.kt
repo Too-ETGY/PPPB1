@@ -19,15 +19,26 @@ class ThirdActivity : AppCompatActivity() {
         enableEdgeToEdge()
 
         binding = ActivityThirdBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_third)
+        setContentView(binding.root)
 
-        with(binding){
-            val resultIntent = Intent()
+        // Ambil data dari Intent
+        val name = intent.getStringExtra("name") ?: "-"
+        val nim = intent.getStringExtra("nim") ?: "-"
+        val prodi = intent.getStringExtra("prodi") ?: "-"
+        val umur = intent.getStringExtra("umur") ?: "-"
+        val hobby = intent.getStringExtra("hobby") ?: "-"
 
-            resultIntent.putExtra("address", edtAddress.text.toString())
-            setResult(Activity.RESULT_OK, resultIntent)
+        // Tampilkan ke TextView
+        with(binding) {
+            namaDtl.text = name
+            nimDtl.text = nim
+            prodiDtl.text = prodi
+            umurDtl.text = umur
+            hobbyDtl.text = hobby
 
-            finish()
+            btnBack.setOnClickListener {
+                finish()
+            }
         }
     }
 }

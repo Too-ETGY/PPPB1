@@ -1,5 +1,7 @@
-package com.example.d4_myshop
+package com.example.d3_intentapp
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.style.UnderlineSpan
@@ -21,15 +23,24 @@ class SecondActivity : AppCompatActivity() {
 
         setContentView(binding.root)
 
-        var name = intent.getStringExtra("name")
-        var data = intent.getStringExtra("data")
-
         with(binding){
-            val mSpannableString = SpannableString(data)
-            mSpannableString.setSpan(UnderlineSpan(), 0, mSpannableString.length, 0)
 
-            secondText.text = "Hello, ${name}"
-            detailText.text = mSpannableString
+            btnBack.setOnClickListener {
+                finish()
+            }
+
+            btnSimpan.setOnClickListener {
+                val intentToMainActivity = Intent()
+
+                intentToMainActivity.putExtra("name", namaEdt.text.toString())
+                intentToMainActivity.putExtra("nim", nimEdt.text.toString())
+                intentToMainActivity.putExtra("prodi", prodiEdt.text.toString())
+                intentToMainActivity.putExtra("umur", umurEdt.text.toString())
+                intentToMainActivity.putExtra("hobby", hobbyEdt.text.toString())
+
+                setResult(Activity.RESULT_OK, intentToMainActivity)
+                finish()
+            }
         }
     }
 }

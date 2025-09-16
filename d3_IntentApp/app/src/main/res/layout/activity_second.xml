@@ -5,27 +5,160 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:layout_gravity="center">
+    tools:context=".SecondActivity"
+    android:background="#b4a7d6"
+    android:paddingVertical="36dp"
+    android:paddingHorizontal="18dp">
 
     <TextView
-        android:id="@+id/second_text"
+        android:id="@+id/main_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:text="Hello"/>
+        android:orientation="horizontal"
+        android:text="Ubah Data"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="24dp"
+    />
 
-    <TextView
-        android:id="@+id/detail_text"
+    <LinearLayout
+        android:id="@+id/name_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/main_text"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        >
+        <TextView
+            android:id="@+id/name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/nama_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nim_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/name_line"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/nim_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NIM:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/nim_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/umur_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/prodi_line"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/umur_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Usia:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/umur_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/hobby_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/umur_line"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/hobby_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hobby:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/hobby_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/prodi_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/nim_line"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/prodi_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jurusan:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            />
+        <EditText
+            android:id="@+id/prodi_edt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/btn_simpan"
+        app:layout_constraintTop_toBottomOf="@id/hobby_line"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="15dp"
+        android:text="Back"
+        android:textSize="14sp"
+        android:backgroundTint="#3d85c6"
+        />
+
+    <Button
+        android:id="@+id/btn_simpan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/second_text"
-        android:text="hai"
+        app:layout_constraintTop_toBottomOf="@id/hobby_line"
+        android:layout_marginTop="35dp"
+        android:text="Save"
+        android:textSize="14sp"
+        android:backgroundTint="#38761d"
         />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
