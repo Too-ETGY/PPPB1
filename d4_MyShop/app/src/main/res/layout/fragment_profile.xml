@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profileFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment"
+    android:orientation="vertical"
+    android:background="#efefec"
+    android:paddingVertical="18dp"
+    android:paddingHorizontal="30dp">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/title_txt"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Profile fragment" />
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textSize="36dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="56dp"
+        android:layout_marginBottom="18dp"
+        />
 
-</FrameLayout>
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="150dp"
+        android:src="@drawable/foto_rame"
+        android:layout_marginBottom="18dp"
+        />
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Nama"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/phone_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Nomor Telepon"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+    <TextView
+        android:id="@+id/alamat_txt"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:text="Alamat"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <Button
+        android:id="@+id/btn_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ubah"
+        android:layout_marginTop="18dp"
+        />
+
+</LinearLayout>

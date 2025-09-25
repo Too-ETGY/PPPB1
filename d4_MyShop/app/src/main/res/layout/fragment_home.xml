@@ -1,14 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragmentHome">
+    tools:context=".HomeFragment"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#efefec" >
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/phone_14_01"
+        />
+
     <TextView
+        android:id="@+id/txt_product_name"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Home fragment" />
+        android:layout_height="wrap_content"
+        android:text="Samsung S25"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
 
-</FrameLayout>
+    <Button
+        android:id="@+id/btn_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beli Sekarang"
+        />
+
+</LinearLayout>
